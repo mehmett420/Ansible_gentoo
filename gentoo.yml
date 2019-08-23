@@ -1,0 +1,9 @@
+- name: Transfer and execute a script.
+  hosts: my_hosts
+  tasks:
+     - name: Copy file gentoo.sh
+       copy:
+        src: address where script is located
+        dest: /root
+     - name: run gentoo
+       command: sh /root/gentooinstallation.sh
